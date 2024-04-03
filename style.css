@@ -1,36 +1,127 @@
-/* Estilos para o formulário */
-body{
-    background-color:#E0CCBE;
-    font-family:Arial, Helvetica, sans-serif
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-h1{
-    text-align: center;
-    font-size: larger;
-    
+
+body > header{
+background-color: #2f3640;
+padding: 16px 0px;
+color: #f5f6fa;
+
 }
-form {
-    max-width: 300px;
-    margin: 0 auto;
-    font-size: small;
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+header li{
+display: inline;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin-left: 16px;
 }
-input[type="submit"],
-input[type="reset"] {
-    background-color: #007bff;
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container{
+    width: 1366px;
+    margin:0 auto;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img{
+   /* height: 180px;*/
+   width: 100%;
+}
+
+.articles article{
+    width: 30%;
+}
+section{
+    padding: 16px 0px;
+}
+section h2,
+.articles article{
+    margin-bottom: 16px;
+}
+.articles article{
+
+    margin-top: 8dpx;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: blue;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
 }
-input[type="reset"] {
-    background-color: #dc3545;
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a{
+    font-family: “Segoe UI”, arial, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h{
+font-size: 32px;
+}
+
+#sport{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+#sport .articles article a{
+    background-color: #009432;
+}
+
+#economy{
+    background-color: #fffa65;
+
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+
+#entertainment{
+    background-color: #B5E5CF;
+
+}
+
+#entertainment .articles article a{
+    background-color: #29A0B1;
+
+}
+
+#technology{
+    background-color: #ACBAAD;
+
+}
+
+#technology .articles article a{
+    background-color: #1F232C;
+
 }
